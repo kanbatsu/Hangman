@@ -1,0 +1,24 @@
+.letter
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: #282c34 1px solid;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#keyboard
+{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.disabled
+{
+    color: #e0e0e0;
+    cursor: not-allowed !important;
+}

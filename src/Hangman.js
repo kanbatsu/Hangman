@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import PropTypes from 'prop-types'
 
 class Hangman extends Component
 {
@@ -11,6 +11,9 @@ class Hangman extends Component
         ctx.strokeStyle = 'white';
 
         switch (count) {
+            case 0:
+                ctx.clearRect(0,0, 400, 400);
+                break;
             case 1:
                 ctx.fillRect(0, 300, 400, 100);
                 break;
@@ -65,20 +68,25 @@ class Hangman extends Component
         this.Draw();
     }
 
-    // 1er argument : futures props.  2e : futur état local.
-    shouldComponentUpdate(nextCount) {
-        return nextCount !== this.props.count
+    componentDidUpdate(prevProps) {
+        if(this.props.count !== prevProps.count)
+        {
+            this.Draw()
+        }
     }
 
     render() {
         const { count } = this.props
-        console.log('render called');
         return (
-            <canvas ref="canvas" height="400px" width="400px" step={count} >
+            <canvas ref="canvas" height="400px" width="400px" count={count} >
                 Votre naviguateur n'est pas compatible
             </canvas>
         )
     }
+}
+
+Hangman.propTypes = {
+    count: PropTypes.number.isRequired
 }
 
 export default Hangman
