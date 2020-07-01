@@ -2,7 +2,7 @@
 
 Bonjour et bienvenue dans ce projet de réaliation du jeu du pendu à l'aide de React
 
-Si vous corrigez cet exercice, c'est que vous l'avez vous-même réalisé. Mais pour vous assurer une correction optimale je me permet de vous fournir quelques informations supplémentaires
+Peut-être avez-vous déjà lancer plusieurs projets react, mais ayant constaté de nombreuses erreurs, je me permet de vous fournir quelques informations supplémentaires
 
 ## Lancer le projet
 
@@ -25,7 +25,7 @@ Ce projet utilise :
 * **react-dom version 16.8.6**
 * **react-scripts version 2.1.8**
 
-Il inclus la bibliothèque tierce, vu dans le cours, **Prop Types version 15.7.2**
+Il inclus la bibliothèque tierce, **Prop Types version 15.7.2**
 
 ## Erreur lors du lancement du serveur
 
@@ -59,4 +59,4 @@ Je n'ai à ce jour pas eu d'autre erreur, et j'espère que vous pourrez lancer l
 
 ## Fin
 
-Il ne me reste qu'à vous remercier d'avoir pris le temps de lire ce fichier, et à vous souhaiter une bonne correction !
+Il ne me reste qu'à vous remercier d'avoir pris le temps de lire ce fichier, et à vous souhaiter une bonne partie !

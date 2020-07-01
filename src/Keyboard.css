@@ -22,3 +22,14 @@
     color: #e0e0e0;
     cursor: not-allowed !important;
 }
+
+@media (max-width: 576px) {
+    #keyboard {
+        width: 100%;
+    }
+    .letter {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}

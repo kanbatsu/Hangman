@@ -5,7 +5,7 @@ class Hangman extends Component
 {
 
     Draw() {
-        const { count } = this.props
+        const { count } = this.props;
         const ctx = this.refs.canvas.getContext('2d');
         ctx.fillStyle = 'white';
         ctx.strokeStyle = 'white';
@@ -76,9 +76,9 @@ class Hangman extends Component
     }
 
     render() {
-        const { count } = this.props
+        const { count } = this.props;
         return (
-            <canvas ref="canvas" height="400px" width="400px" count={count} >
+            <canvas ref="canvas" width="400px" height="400px" count={count} >
                 Votre naviguateur n'est pas compatible
             </canvas>
         )

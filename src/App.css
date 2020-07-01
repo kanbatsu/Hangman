@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-header {
@@ -29,7 +30,7 @@
 #menu
 {
   min-height: 100vh;
-  max-height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   background-color: rgba(0,0,0,.8);
@@ -76,4 +77,18 @@ canvas
 {
   border: white 4px dashed;
   border-radius: 25px;
+  /*height: 400px;
+  width: 400px;*/
+}
+
+@media (max-width: 576px) {
+  canvas{
+    transform: scale(.5);
+  }
+  section{
+    width: 100vw;
+  }
+  .App-header {
+    height: 50%;
+  }
 }
