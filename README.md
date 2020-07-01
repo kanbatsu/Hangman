@@ -1,4 +1,4 @@
-#The Hangman
+# The Hangman
 
 This project is a simply hangman game. You have to guess a word, asking if a letter is in the word, if it is, it has been revealed as many occurence in the word, but if you're wrong, it's drawing step by step, a hangman. If the hangman is complete before you've guessed the word, you lose, otherwise, of course, you win.
 
